@@ -1,0 +1,32 @@
+/* ==UserStyle==
+@name          TeslaMate Dark
+@namespace     github.com/xnaas/stylus-teslamate-dark
+@homepageURL   https://github.com/xnaas/stylus-teslamate-dark
+@version       1.0.0
+@updateURL     https://raw.githubusercontent.com/xnaas/stylus-teslamate-dark/master/stylus-teslamate-dark.user.css
+@description   Prevents TeslaMate from blinding you.
+@author        xnaas
+==/UserStyle== */
+
+@-moz-document regexp("https:\\/\\/tesla(|mate)\\.[a-z]+\\.[a-z]+\\/(|settings|geo-fences.*)") {
+html {
+  background-color: #242424;
+}
+body, p.title, p.subtitle, .title, nav.breadcrumb ul li.is-active a, .label, .table th {
+  color: #f4f4f4;
+}
+.card {
+  background-color: #373737;
+}
+.table, .navbar-item {
+  background-color: #373737;
+  color: #f4f4f4;
+}
+.has-text-grey-dark {
+  color: #f4f4f4 !important;
+}
+.navbar-dropdown {
+  background-color: #373737;
+  border-top: none;
+}
+}
